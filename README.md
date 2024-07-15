@@ -10,6 +10,7 @@ VM Groups also allow you to perform administrative tasks on groups of VMs instea
 This script provides the administrator with a simple management interface to manage VM Groups in a HV Cluster. It has not been tested with standalone Hyper-V servers, though I hope to get to this soon. It allows the following functions:
 
 - Add VM To Existing Group
+
 (Add-VMGroupMember -ComputerName $ownerNode -Name $groupName -VM $vm)
 -  Move VM to New Group
 -  Remove VM from Group
