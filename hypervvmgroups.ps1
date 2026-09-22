@@ -174,11 +174,11 @@ function Add-VMToGroup {
             -Name $groupName `
             -VM $vm `
             -ErrorAction Stop
-
+     
         Write-Host ""
         Write-Host "VM '$vmName' has been added to '$groupName'." `
             -ForegroundColor Green
-
+		$script:ChangesMade = $true
         Write-Host "VM Owner Node: $ownerNode" `
             -ForegroundColor DarkGray
     }
