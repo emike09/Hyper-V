@@ -7,7 +7,7 @@ Certain applications can utilize groups. For example, Veeam Backup and Restore. 
 VM Groups also allow you to perform administrative tasks on groups of VMs instead of one at a time. Groups can be nested as well. 
 
 ### hypervvmgroups.ps1
-This script provides the administrator with a simple management interface to manage VM Groups in a HV Cluster. It has not been tested with standalone Hyper-V servers, though I hope to get to this soon. It allows the following functions:
+This script provides the administrator with a simple management interface to manage VM Groups in a HV Cluster. It allows the following functions:
 
 - Add VM To Existing Group
 -  Move VM to New Group
@@ -19,4 +19,4 @@ This script provides the administrator with a simple management interface to man
  - Delete VM Group
  - Rename VM Group
    
-Testing could also be done with multiple clusters in a failover group, but I also haven't had the opportunity to test this. 
+This is particularly useful for Veeam Backup and Replication, or anywhere where you need to administer your VMs by group since HV/FC/WAC doesn't provide a good way to do this. 
